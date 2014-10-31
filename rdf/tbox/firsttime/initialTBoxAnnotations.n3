@@ -1,0 +1,181 @@
+
+#@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+#@prefix vitro-public:  <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+
+@prefix bf:      <http://bibframe.org/vocab> .
+@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Add ontology metadata (label, version)
+<http://bibframe.org/vocab/> # a owl:Ontology ;
+    rdfs:label "Bibframe"@en-US ;
+    owl:versionInfo "0.1"^^xsd:string .
+    
+<http://xmlns.com/foaf/0.1/>  # a owl:Ontology ;
+    rdfs:label "FOAF (Friend of a Friend)"@en-US .
+
+# May need to change namespace of class group assertions to ld4l.org/ontology or 
+# something else 
+
+bf:Annotation
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAnnotation> .
+    
+bf:CoverArt
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAnnotation> .
+    
+bf:Review
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAnnotation> .
+    
+bf:Summary
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAnnotation> .
+    
+bf:TableOfContents
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAnnotation> .
+    
+bf:Agent
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:Authority
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:Family
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:Jurisdiction
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:Meeting
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:Organization
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:Person
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:Place
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:Temporal
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:Topic
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupAuthority> .
+    
+bf:HeldItem
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupHeldMaterial> .
+    
+bf:HeldMaterial
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupHeldMaterial> .    
+    
+bf:Archival
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:Collection
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:Electronic
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:Instance
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+
+bf:Integrating
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:Manuscript
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:Monograph
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:MultipartMonograph
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:Print
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:Serial
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:Tactile
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupInstance> .
+    
+bf:Arrangement
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> .    
+    
+bf:Category
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> . 
+    
+bf:Classification
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> . 
+    
+bf:DescriptionAdminInfo
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> . 
+    
+bf:Event
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> . 
+    
+bf:Identifier
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> . 
+    
+bf:IntendedAudience
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> . 
+    
+bf:Language
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> . 
+    
+bf:Provider
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> . 
+    
+bf:Resource
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> . 
+    
+bf:Title
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupOtherResource> .
+
+# This class is not included in the 10-28-14 version of the bibframe ontology    
+# bf:Related
+#     vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupRelationship> .
+    
+bf:Relator
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupRelationship> .
+    
+bf:Audio
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:Cartography
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:Dataset
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:MixedMaterial
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:MovingImage
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:Multimedia
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:NotatedMovement
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:NotatedMusic
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:StillImage
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:Text
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .    
+    
+bf:ThreeDimensionalObject
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .
+    
+bf:Work
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology/vitroClassGroupWork> .

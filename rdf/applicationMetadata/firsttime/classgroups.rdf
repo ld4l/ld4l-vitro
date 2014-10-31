@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"> 
+   
+  <!-- 
+      Change namespace of classgroup definitions to ld4l.org/ontology. See VIVO
+      classgroup URIs; e.g., 
+      http://vivoweb.org/ontology#vitroClassGrouppeople. Note that neither 
+      the classgroup ontology URI http://vivoweb.org/ontology# nor the individual
+      classgroup URIs are resolvable, whereas http://vivoweb.org/ontology/core
+      is a resolvable URI containing the VIVO core ontology, as are the VIVO
+      classes; e.g., http://vivoweb.org/ontology/core#FacultyMember 
+  -->
+  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupAnnotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-US">annotation</rdfs:label>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T011:00:00</vitro:modTime>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
+    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</vitro:displayRank>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-US">authority</rdfs:label>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T011:00:00</vitro:modTime>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
+    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</vitro:displayRank>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupHeldMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-US">held material</rdfs:label>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T011:00:00</vitro:modTime>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
+    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</vitro:displayRank>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupInstance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-US">instance</rdfs:label>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T011:00:00</vitro:modTime>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
+    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</vitro:displayRank>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupOtherResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-US">other resource</rdfs:label>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T011:00:00</vitro:modTime>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
+    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</vitro:displayRank>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupRelationship">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-US">relationship</rdfs:label>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T011:00:00</vitro:modTime>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
+    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</vitro:displayRank>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupWork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-US">work</rdfs:label>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T011:00:00</vitro:modTime>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
+    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</vitro:displayRank>
+  </rdf:Description>
+</rdf:RDF>
