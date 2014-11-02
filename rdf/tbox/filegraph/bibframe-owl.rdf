@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
   
-
-
 <!-- 
   These additions to the bibframe ontology are NOT vitro-specific, so they 
   should be moved out of the application and retrieved from a URL at
@@ -9,16 +7,21 @@
 -->
 
 <rdf:RDF 
+    xmlns:bf="http://www.bibframe.org/vocab/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
     xmlns:owl="http://www.w3.org/2002/07/owl#" 
     xmlns:dcterms="http://purl.org/dc/terms/"
-    xml:base="http://ld4.org/ontology/bibframe-owl">
+    xml:base="http://ld4.org/ontology/bibframe-owl#">
+  
+  <!-- About this file -->
   <owl:Ontology rdf:about="">
     <rdfs:comment>Declare bibframe classes to be owl classes, and bibframe properties to be owl datatype or object properties</rdfs:comment>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1</owl:versionInfo>
-    <dcterms:modified>2014-10-31T14:37-0400</dcterms:modified>
+    <dcterms:modified>2014-10-31T18:00-0400</dcterms:modified>
   </owl:Ontology>
+  
+  <!-- owl:Class assertions -->
   <rdf:Description rdf:about="http://bibframe.org/vocab/Agent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -180,9 +183,8 @@
   <rdf:Description rdf:about="http://bibframe.org/vocab/Work">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-
-
-
+  
+  <!-- owl:DatatypeProperty assertions -->
   <rdf:Description rdf:about="http://bibframe.org/vocab/label">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -549,7 +551,8 @@
   <rdf:Description rdf:about="http://bibframe.org/vocab/categoryValue">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-
+  
+  <!-- owl:ObjectProperty assertions -->
   <rdf:Description rdf:about="http://bibframe.org/vocab/musicMedium">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
@@ -1012,4 +1015,6 @@
   <rdf:Description rdf:about="http://bibframe.org/vocab/classificationUdc">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
+  
+  <!-- TODO owl:inverseOf assertions -->
 </rdf:RDF>
