@@ -14,7 +14,7 @@
     xml:base="http://www.bibframe.org/vocab/">
   
   <!-- About this file -->
-  <owl:Ontology rdf:about="http://ld4l.org/ontology/bibframe-owl#">
+  <owl:Ontology rdf:about="http://ld4l.library.cornell.edu/ontology/bibframe-owl#">
     <rdfs:comment>Declare bibframe classes to be owl classes, and bibframe properties to be owl datatype or object properties</rdfs:comment>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1</owl:versionInfo>
     <dcterms:modified>2014-10-31T18:00-0400</dcterms:modified>

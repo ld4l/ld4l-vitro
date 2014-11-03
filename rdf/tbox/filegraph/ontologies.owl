@@ -3,5 +3,5 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#">
     <owl:Ontology rdf:about="http://xmlns.com/foaf/0.1/"/>
     <owl:Ontology rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/public"/>
-    <!-- <owl:Ontology rdf:about="http://bibframe.org/vocab/"/> -->
+    <owl:Ontology rdf:about="http://bibframe.org/vocab/"/>
 </rdf:RDF> 
