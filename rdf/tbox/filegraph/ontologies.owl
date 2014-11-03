@@ -4,4 +4,7 @@
     <owl:Ontology rdf:about="http://xmlns.com/foaf/0.1/"/>
     <owl:Ontology rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/public"/>
     <owl:Ontology rdf:about="http://bibframe.org/vocab/"/>
+    <!-- TODO Change domain to ld4l.org once the server is set up -->
+    <owl:Ontology rdf:about="http://ld4l.library.cornell.edu/ontology/bibframe-owl#"/>
+    <owl:Ontology rdf:about="http://ld4l.library.cornell.edu/ontology/bibframe-property#"/>
 </rdf:RDF> 
