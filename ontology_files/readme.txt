@@ -3,18 +3,19 @@ These files should reside in the following application directories:
 ../rdf/applicationMetadata/firsttime:
 classgroups.rdf
 
-
 ../rdf/tbox/filegraph:
 bibframe-owl.owl
 bibframe-properties.owl
 ontologies.owl
 
-
 ../rdf/tbox/firsttime:
 initialTboxAnnotations.n3
 
 As a temporary measure, will upload these files after building and deploying the
-application, since at the moment I can't get them to work. 
+application, since at the moment I can't get them to work. Exception: the file
+ontologies.owl itself does not need to be uploaded, but the ontologies listed
+in that file (foaf, bibframe) do need to be loaded after deployment via the
+site admin UI.
 
 A further step will be to place them on the server in 
 ld4l.library.cornell.edu/ontology (/cul/data/ontology in filesystem) and have 
