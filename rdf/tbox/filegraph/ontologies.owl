@@ -7,8 +7,11 @@
         Not needed. It's automatically loaded with vitro.
         <owl:Ontology rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/public#"/>
     -->
-    <!-- TODO Change domain to ld4l.org once the server is set up -->
-    <!-- Temporarily removing - not working 
+    <!-- 
+        If these are part of an LD4L ontology, we can store them on the server
+        so they are publically accessible. (If so, change domain to ld4l.org 
+        with Alan's help.) Otherwise, just leave them in the application.
         <owl:Ontology rdf:about="http://ld4l.library.cornell.edu/ontology/bibframe-owl#"/> 
-        <owl:Ontology rdf:about="http://ld4l.library.cornell.edu/ontology/bibframe-properties#"/> -->
+        <owl:Ontology rdf:about="http://ld4l.library.cornell.edu/ontology/bibframe-properties#"/> 
+    -->
 </rdf:RDF> 
