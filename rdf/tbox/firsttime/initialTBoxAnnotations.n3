@@ -1,26 +1,54 @@
 @prefix bf:      <http://bibframe.org/vocab/> .
-@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix ld4l:    <http://ld4l.org/ontology/core#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix vivo:    <http://vivoweb.org/ontology/core#> .
 
-# Ontology metadata #
+## ONTOLOGY METADATA ##
 
- <http://bibframe.org/vocab/> 
+<http://bibframe.org/vocab/> 
     rdfs:label "Bibframe"@en-US ;  
     vitro:ontologyPrefixAnnot "bf"^^xsd:string .
     
 <http://xmlns.com/foaf/0.1/> 
     rdfs:label "FOAF (Friend of a Friend)"@en-US ;
     vitro:ontologyPrefixAnnot "foaf"^^xsd:string .
+
+<http://ld4l.org/ontology/core#>
+    rdfs:label "LD4L Core"@en-US ;
+    vitro:ontologyPrefixAnnot "ld4l"^^xsd:string; 
+        
+<http://www.loc.gov/mads/rdf/v1>
+    rdfs:label "MADS/RDF"@en-US ;
+    vitro:ontologyPrefixAnnot "madsrdf"^^xsd:string;
     
+<http://purl.org/pav/>
+    rdfs:label "Provenance, Authoring and Versioning (PAV)"@en-US ;
+    vitro:ontologyPrefixAnnot "pav"^^xsd:string;    
+
+<http://www.w3.org/2006/vcard/ns>
+    rdfs:label "VCard"@en-US ;
+    vitro:ontologyPrefixAnnot "vcard"^^xsd:string;
+
 <http://vitro.mannlib.cornell.edu/ns/vitro/public>
     vitro:ontologyPrefixAnnot "vitro-public"^^xsd:string ;
     rdfs:label "Vitro Public Ontology"@en-US .
-    
         
-# TODO Change namespace of class group assertions to ld4l.org/ontology# 
+<http://vivoweb.org/ontology/core#>
+    rdfs:label "VIVO Core"@en-US ;
+    vitro:ontologyPrefixAnnot "vivo"^^xsd:string;
+
+    
+## CLASSES ##
+
+# TODO Add additional assertions - see VIVO initialTBoxAnnotations.n3 #
 
 bf:Annotation
     vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupAnnotation> .
@@ -56,18 +84,7 @@ bf:Organization
     vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupAuthority> .
     
 bf:Person
-    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupAuthority> ;
-      rdfs:label "Person"@en-US ;
-      vitro:displayLimitAnnot
-              "-1"^^xsd:int ;
-      vitro:displayRankAnnot
-              "-1"^^xsd:int ;
-      vitro:hiddenFromDisplayBelowRoleLevelAnnot
-              <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
-      vitro:hiddenFromPublishBelowRoleLevelAnnot
-              <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
-      vitro:prohibitedFromUpdateBelowRoleLevelAnnot
-              <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupAuthority> .
               
 bf:Place
     vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupAuthority> .
@@ -192,3 +209,16 @@ bf:ThreeDimensionalObject
     
 bf:Work
     vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupWork> .
+    
+foaf:Person
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupRWO> .
+    
+madsrdf:RWO
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupRWO> .   
+    
+   
+    
+## PROPERTIES ##
+
+# TODO Define property class groups and make related assertions here. #
+    
