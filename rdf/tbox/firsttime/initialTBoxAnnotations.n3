@@ -23,27 +23,27 @@
 
 <http://ld4l.org/ontology/core#>
     rdfs:label "LD4L Core"@en-US ;
-    vitro:ontologyPrefixAnnot "ld4l"^^xsd:string; 
+    vitro:ontologyPrefixAnnot "ld4l"^^xsd:string . 
         
-<http://www.loc.gov/mads/rdf/v1>
+<http://www.loc.gov/mads/rdf/v1#>
     rdfs:label "MADS/RDF"@en-US ;
-    vitro:ontologyPrefixAnnot "madsrdf"^^xsd:string;
+    vitro:ontologyPrefixAnnot "madsrdf"^^xsd:string .
     
 <http://purl.org/pav/>
     rdfs:label "Provenance, Authoring and Versioning (PAV)"@en-US ;
-    vitro:ontologyPrefixAnnot "pav"^^xsd:string;    
+    vitro:ontologyPrefixAnnot "pav"^^xsd:string .  
 
-<http://www.w3.org/2006/vcard/ns>
+<http://www.w3.org/2006/vcard/ns#>
     rdfs:label "VCard"@en-US ;
-    vitro:ontologyPrefixAnnot "vcard"^^xsd:string;
+    vitro:ontologyPrefixAnnot "vcard"^^xsd:string .
 
 <http://vitro.mannlib.cornell.edu/ns/vitro/public>
-    vitro:ontologyPrefixAnnot "vitro-public"^^xsd:string ;
     rdfs:label "Vitro Public Ontology"@en-US .
-        
+    vitro:ontologyPrefixAnnot "vitro-public"^^xsd:string .
+     
 <http://vivoweb.org/ontology/core#>
     rdfs:label "VIVO Core"@en-US ;
-    vitro:ontologyPrefixAnnot "vivo"^^xsd:string;
+    vitro:ontologyPrefixAnnot "vivo"^^xsd:string .
 
     
 ## CLASSES ##
@@ -212,13 +212,15 @@ bf:Work
     
 foaf:Person
     vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupRWO> .
-    
-madsrdf:RWO
-    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupRWO> .   
-    
+ 
+foaf:Organization
+    vitro:inClassGroup <http://ld4l.library.cornell.edu/ontology#vitroClassGroupRWO> .
+
    
     
 ## PROPERTIES ##
 
-# TODO Define property class groups and make related assertions here. #
+# TODO Define property class groups in 
+/rdf/applicationMetadata/firsttime/propertygroups.rdf and group the properties 
+here. #
     

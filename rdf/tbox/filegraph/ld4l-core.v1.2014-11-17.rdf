@@ -191,7 +191,35 @@
         <rdfs:comment>Relates an Authority to a Resource it contributed to.</rdfs:comment>       
         <owl:inverseOf rdf:resource="http://bibframe.org/vocab/contributor"/>
     </owl:ObjectProperty>
-  
+
+    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/core#hasGlobalAuthority">
+        <rdfs:domain rdf:resource="http://bibframe.org/vocab/Authority"/>
+        <rdfs:label>has global authority</rdfs:label>
+        <rdfs:range rdf:resource="http://bibframe.org/vocab/Resource"/>
+        <rdfs:comment>Links a bf:Authority to an external authority.</rdfs:comment>       
+        <rdfs:subPropertyOf rdf:resource="http://bibframe.org/vocab/hasAuthority"/>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/core#hasLocalAuthority">
+        <rdfs:domain rdf:resource="http://bibframe.org/vocab/Authority"/>
+        <rdfs:label>has local authority</rdfs:label>
+        <rdfs:range rdf:resource="http://bibframe.org/vocab/Resource"/>
+        <rdfs:comment>Links an external Authority to a bf:Authority.</rdfs:comment>       
+        <owl:inverseOf rdf:resource="http://ld4l.org/ontology/core#hasGlobalAuthority"/>
+    </owl:ObjectProperty>
+    
+    <!-- 
+        ALTERNATIVE to hasGlobalAuthority / hasLocalAuthority 
+        
+        <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/core#authorityFor">
+            <rdfs:domain rdf:resource="http://bibframe.org/vocab/Resource"/>
+            <rdfs:label>authority for</rdfs:label>
+            <rdfs:range rdf:resource="http://bibframe.org/vocab/Authority"/>
+            <rdfs:comment>Links an external Authority to a bf:Authority.</rdfs:comment>       
+            <owl:inverseOf rdf:resource="http://bibframe.org/vocab/hasAuthority"/>
+        </owl:ObjectProperty>        
+    -->
+    
     <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/core#holding">
         <rdfs:domain rdf:resource="http://bibframe.org/vocab/Instance"/>
         <rdfs:label>holding</rdfs:label>
