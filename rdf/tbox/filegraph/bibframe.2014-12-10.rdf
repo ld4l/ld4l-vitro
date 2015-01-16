@@ -1,6 +1,5 @@
-<!-- TODO Remove classes and properties not used by LD4L -->
-
-<rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+<rdf:RDF 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
   xmlns:dcterms="http://purl.org/dc/terms/" 
@@ -13,7 +12,7 @@
   xml:base="http://bibframe.org/vocab/">
   <owl:Ontology rdf:about="">
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initially automatically generated.</owl:versionInfo>
-    <dcterms:modified>2014-10-28T21:32:18.267189Z</dcterms:modified>
+    <dcterms:modified>2014-12-10T20:23:05.638677Z</dcterms:modified>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://bibframe.org/vocab/Resource">
     <rdfs:label>Resource</rdfs:label>
