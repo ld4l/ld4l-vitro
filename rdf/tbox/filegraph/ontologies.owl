@@ -7,7 +7,7 @@
     <owl:Ontology rdf:about="http://purl.org/pav/"/>
     <owl:Ontology rdf:about="http://www.loc.gov/mads/rdf/v1#"/>
     <owl:Ontology rdf:about="http://www.w3.org/2006/vcard/ns#"/>
-    <owl:Ontology rdf:about="http://vivoweb.org/ontology/core#"/>
+    <!-- <owl:Ontology rdf:about="http://vivoweb.org/ontology/core#"/> -->
     <owl:Ontology rdf:about="http://ld4l.org/ontology/core#"/>
     
     <!-- 
