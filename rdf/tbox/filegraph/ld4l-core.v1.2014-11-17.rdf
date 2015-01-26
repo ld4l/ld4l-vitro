@@ -249,9 +249,8 @@
     <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/core#authorOf">
         <!-- 
             pav doesn't define domain or range for authoredBy, so not defining
-            them for ld4l: authorOf. Domain could be bf:Person but also perhaps 
+            them for ld4l:authorOf. Domain could be bf:Person but also perhaps 
             an organization? Range could be bf:Work or oclc:Work or...?
-            <rdfs:range rdf:resource="http://bibframe.org/vocab/Work"/>
         -->
         <rdfs:label>author of</rdfs:label>
         <rdfs:comment>Author of a work.</rdfs:comment>       
