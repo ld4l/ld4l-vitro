@@ -252,7 +252,8 @@
         <!-- 
             pav doesn't define domain or range for authoredBy, so not defining
             them for ld4l:authorOf. Domain could be bf:Person but also perhaps 
-            an organization? Range could be bf:Work or oclc:Work or...?
+            an organization? Or a vcard:Individual if we don't know enough to
+            create a foaf:Person. Range could be bf:Work or oclc:Work or...?
         -->
         <rdfs:label>author of</rdfs:label>
         <rdfs:comment>Author of a work.</rdfs:comment>       
