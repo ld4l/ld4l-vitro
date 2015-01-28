@@ -19,7 +19,11 @@
 <http://ld4l.org/ontology/core#>
     rdfs:label "LD4L Core"@en-US ;
     vitro:ontologyPrefixAnnot "ld4l"^^xsd:string . 
-        
+    
+<http://ld4l.org/ontology/ext#>
+    rdfs:label "LD4L Extensions"@en-US ;
+    vitro:ontologyPrefixAnnot "ld4l-ext"^^xsd:string . 
+          
 <http://www.loc.gov/standards/mads/rdf/v1.rdf>
     rdfs:label "MADS/RDF"@en-US ;
     vitro:ontologyPrefixAnnot "madsrdf"^^xsd:string .

@@ -1,24 +1,19 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#">
-    
-    <owl:Ontology rdf:about="http://xmlns.com/foaf/0.1/"/>
-    <owl:Ontology rdf:about="http://bibframe.org/vocab/"/>
-    <owl:Ontology rdf:about="http://purl.org/pav/"/>
-    <owl:Ontology rdf:about="http://www.loc.gov/standards/mads/rdf/v1.rdf"/>
-    <owl:Ontology rdf:about="http://www.w3.org/2006/vcard/ns"/>
-    <!-- <owl:Ontology rdf:about="http://vivoweb.org/ontology/core#"/> -->
-    <owl:Ontology rdf:about="http://ld4l.org/ontology/core#"/>
-    
-    <!-- 
-        Not needed. It's automatically loaded with vitro.
-        <owl:Ontology rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/public#"/>
-    -->
-    <!-- 
-        If these are part of an LD4L ontology, we can store them on the server
-        so they are publically accessible. Otherwise, just leave them in the 
-        application.
-        <owl:Ontology rdf:about="http://ld4l.org/ontology/bibframe-owl#"/> 
-        <owl:Ontology rdf:about="http://ld4l.org/ontology/core#"/> 
-    -->
-</rdf:RDF> 
+  xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+  <owl:Ontology rdf:about="http://xmlns.com/foaf/0.1/"/>
+  <owl:Ontology rdf:about="http://bibframe.org/vocab/"/>
+  <owl:Ontology rdf:about="http://purl.org/pav/"/>
+  <owl:Ontology rdf:about="http://www.loc.gov/standards/mads/rdf/v1.rdf"/>
+  <owl:Ontology rdf:about="http://www.w3.org/2006/vcard/ns"/>
+  <!-- <owl:Ontology rdf:about="http://vivoweb.org/ontology/core#"/> -->
+  <owl:Ontology rdf:about="http://ld4l.org/ontology/core#"/>
+  <owl:Ontology rdf:about="http://ld4l.org/ontology/ext#"/>
+
+  <!--
+    Not needed. It's automatically loaded with vitro.
+    <owl:Ontology rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/public#"/>
+  -->
+
+</rdf:RDF>
