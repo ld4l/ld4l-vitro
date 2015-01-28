@@ -44,9 +44,7 @@
 #     vitro:ontologyPrefixAnnot "vivo"^^xsd:string .
 
     
-## CLASSES ##
-
-# TODO Add additional assertions - see VIVO initialTBoxAnnotations.n3 #
+## CLASS GROUPS ##
 
 bf:Annotation
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotation> .
@@ -207,7 +205,13 @@ bf:ThreeDimensionalObject
     
 bf:Work
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+   
+foaf:Agent
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRWO> .
     
+foaf:Group
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRWO> .
+     
 foaf:Person
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRWO> .
  
