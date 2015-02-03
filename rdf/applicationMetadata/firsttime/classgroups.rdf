@@ -20,6 +20,9 @@
       resolvable URIs.
   -->
   
+  <!-- TODO Need to define classgroups that are relevant to real world objects
+       rather than Bibframe entities -->
+  
   <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupAnnotation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:label xml:lang="en-US">annotation</rdfs:label>

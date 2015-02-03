@@ -46,6 +46,9 @@
     
 ## CLASS GROUPS ##
 
+## TODO Need to define classgroups that are relevant to real world objects
+## rather than Bibframe entities, and make assignments accordingly.
+
 bf:Annotation
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotation> .
     
@@ -223,6 +226,6 @@ foaf:Organization
 ## PROPERTIES ##
 
 # TODO Define property class groups in 
-/rdf/applicationMetadata/firsttime/propertygroups.rdf and group the properties 
-here. #
+# /rdf/applicationMetadata/firsttime/propertygroups.rdf and group the properties 
+# here. 
     
