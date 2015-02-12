@@ -21,16 +21,29 @@
         <owl:inverseOf rdfs:resource="http://ld4l.org/ontology/core#hasVcard" />        
     </owl:ObjectProperty>
     
-    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/core#hasAlternateName">
-        <rdfs:label>alternate Name</rdfs:label>
-        <rdfs:comment>Relates a thing to its pseudonym or other alternative name.</rdfs:comment>
+    <!-- 
+        For dealing with multiple identities associated with a single person 
+        (e.g., pseudonyms. Currently using the vcard ontology instead. 
+    -->
+    <!--
+    <owl:Class rdf:about="http://ld4l.org/ontology/core#Identity">
+        <rdfs:label>Identity</rdfs:label>
+        <rdfs:comment>An identity associated with a person (e.g., a pseudonym)</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/> (could have a more specific superclass)
+    </owl:Class>
+    
+    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/core#hasAlternateIdentity">
+        <rdfs:label>alternate name</rdfs:label>
+        <rdfs:comment>Relates a thing to its pseudonym or other alternative identity.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#VCard" />
     </owl:ObjectProperty>
     
-    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/core#alternateNameFor">
+    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/core#alternateIdentityFor">
         <rdfs:label>alternate name for</rdfs:label>
-        <rdfs:comment>Relates a pseudonym or other alternate name to the thing it refers to.</rdfs:comment>
-        <owl:inverseOf rdfs:resource="http://ld4l.org/ontology/core#hasAlternateName" />        
+        <rdfs:comment>Relates a pseudonym or other alternate identity to the thing it refers to.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#VCard" />
+        <owl:inverseOf rdfs:resource="http://ld4l.org/ontology/core#hasAlternateIdentity" />        
     </owl:ObjectProperty>
+    -->
     
 </rdf:RDF>
