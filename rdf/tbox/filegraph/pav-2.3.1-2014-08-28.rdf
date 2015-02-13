@@ -949,64 +949,8 @@ This property is normally used in a functional way, although PAV does not formal
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+    <!-- Removed individuals -->
 
-
-    <!-- http://orcid.org/0000-0002-5156-2703 -->
-
-    <owl:NamedIndividual rdf:about="http://orcid.org/0000-0002-5156-2703">
-        <rdf:type rdf:resource="&prov;Person"/>
-        <rdf:type rdf:resource="&foaf;Person"/>
-        <rdfs:label>Paolo Ciccarese</rdfs:label>
-        <foaf:name>Paolo Ciccarese</foaf:name>
-        <owl:sameAs rdf:resource="http://www.hcklab.org/foaf.rdf#me"/>
-    </owl:NamedIndividual>
-
-
-    <!-- http://orcid.org/0000-0001-9842-9718 -->
-
-    <owl:NamedIndividual rdf:about="http://orcid.org/0000-0001-9842-9718">
-        <rdf:type rdf:resource="&prov;Person"/>
-        <rdf:type rdf:resource="&foaf;Person"/>
-        <rdfs:label>Stian Soiland-Reyes</rdfs:label>
-        <foaf:name>Stian Soiland-Reyes</foaf:name>
-        <owl:sameAs rdf:resource="http://soiland-reyes.com/stian/#me"/>
-    </owl:NamedIndividual>
-
-    <!-- http://www.paolociccarese.info/foaf.rdf#marco-ocana -->
-
-    <owl:NamedIndividual rdf:about="http://www.paolociccarese.info/foaf.rdf#marco-ocana">
-        <rdf:type rdf:resource="&prov;Person"/>
-        <rdf:type rdf:resource="&foaf;Person"/>
-        <rdfs:label>Marco Ocana</rdfs:label>
-        <foaf:name>Marco Ocana</foaf:name>
-    </owl:NamedIndividual>
-
-
-    <!-- http://orcid.org/0000-0001-6938-0820 -->
-
-    <owl:NamedIndividual rdf:about="http://orcid.org/0000-0001-6938-0820">
-        <rdf:type rdf:resource="&foaf;Person"/>
-        <rdfs:label>Khalid Belhajjame</rdfs:label>
-        <foaf:name>Khalid Belhajjame</foaf:name>
-    </owl:NamedIndividual>
-
-
-    <!-- http://orcid.org/0000-0002-5711-4872 -->
-
-    <owl:NamedIndividual rdf:about="http://orcid.org/0000-0002-5711-4872">
-        <rdf:type rdf:resource="&foaf;Person"/>
-        <rdfs:label>Alasdair J G Gray</rdfs:label>
-        <foaf:name>Alasdair J G Gray</foaf:name>
-    </owl:NamedIndividual>
-
-
-    <!-- http://orcid.org/0000-0002-0643-3144 -->
-
-    <owl:NamedIndividual rdf:about="http://orcid.org/0000-0002-0643-3144">
-        <rdf:type rdf:resource="&foaf;Person"/>
-        <rdfs:label>Simon Jupp</rdfs:label>
-        <foaf:name>Simon Jupp</foaf:name>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
