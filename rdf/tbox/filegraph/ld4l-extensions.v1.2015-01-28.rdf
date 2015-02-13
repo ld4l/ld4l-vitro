@@ -255,20 +255,6 @@
         <rdfs:comment>Author of a work.</rdfs:comment>       
         <owl:inverseOf rdf:resource="http://purl.org/pav/authoredBy"/>
     </owl:ObjectProperty>
-    
-    
-    <!-- Class definitions for Getty vocabulary terms -->
-    
-    <owl:Class rdf:about="http://vocab.getty.edu/aat/300224742">
-        <rdfs:label>flier (printed matter)</rdfs:label>
-        <rdfs:comment>Class based on Getty vocabulary term.</rdfs:comment>
-        <rdfs:subClassOf resource="http://bibframe.org/vocab/Work"/>
-    </owl:Class>
-    
-    <owl:Class rdf:about="http://vocab.getty.edu/aat/300027221">
-        <rdfs:label>poster</rdfs:label>
-        <rdfs:comment>Class based on Getty vocabulary term.</rdfs:comment>
-        <rdfs:subClassOf resource="http://bibframe.org/vocab/Work"/>
-    </owl:Class>
+
     
 </rdf:RDF>
