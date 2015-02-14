@@ -108,7 +108,7 @@
     <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/ext#intendedAudienceOf">
         <rdfs:domain rdf:resource="http://bibframe.org/vocab/IntendedAudience"/>
         <rdfs:label>intended audience of</rdfs:label>
-        <rdfs:comment>Relates an IntendedAudience to Resources containing content considered appropriate for it.</rdfs:comment>       
+        <rdfs:comment>Relates an IntendedAudience to a Resource containing content considered appropriate for it.</rdfs:comment>       
         <owl:inverseOf rdf:resource="http://bibframe.org/vocab/intendedAudience"/>
     </owl:ObjectProperty>
     
