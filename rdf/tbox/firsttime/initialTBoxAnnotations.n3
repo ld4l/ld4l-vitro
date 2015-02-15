@@ -28,17 +28,37 @@
     rdfs:label "MADS/RDF"@en-US ;
     vitro:ontologyPrefixAnnot "madsrdf"^^xsd:string .
     
+<http://id.loc.gov/vocabulary/relators/ths.madsrdf.rdf>
+    rdfs:label "Relators"@en-US ;
+    vitro:ontologyPrefixAnnot "relators"^^xsd:string .
+    
+<http://purl.org/ontology/mo/>
+    rdfs:label "Music Ontology"@en-US ;
+    vitro:ontologyPrefixAnnot "mo"^^xsd:string .
+    
+<http://purl.org/NET/c4dm/event.owl>
+    rdfs:label "The Event ontology"@en-US ;
+    vitro:ontologyPrefixAnnot "event"^^xsd:string .
+
+<http://schema.rdfs.org/all>
+    rdfs:label "Schema.org"@en-US ;
+    vitro:ontologyPrefixAnnot "schema"^^xsd:string .
+        
 <http://purl.org/pav/>
     rdfs:label "Provenance, Authoring and Versioning (PAV)"@en-US ;
     vitro:ontologyPrefixAnnot "pav"^^xsd:string .  
-
-<http://www.w3.org/2006/vcard/ns>
-    vitro:ontologyPrefixAnnot "vcard"^^xsd:string .
+    
+<http://vocab.getty.edu/aat/>
+    rdfs:label "Getty Art and Architecture Thesaurus"@en-US
+    vitro:ontologyPrefixAnnot "getty-aat"^^xsd:string .
 
 <http://vitro.mannlib.cornell.edu/ns/vitro/public>
     rdfs:label "Vitro Public Ontology"@en-US ;
     vitro:ontologyPrefixAnnot "vitro-public"^^xsd:string .
      
+<http://www.w3.org/2006/vcard/ns>
+    vitro:ontologyPrefixAnnot "vcard"^^xsd:string .
+
 # <http://vivoweb.org/ontology/core#>
 #     rdfs:label "VIVO Core"@en-US ;
 #     vitro:ontologyPrefixAnnot "vivo"^^xsd:string .

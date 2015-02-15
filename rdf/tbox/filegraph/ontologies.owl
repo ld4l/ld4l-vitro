@@ -6,11 +6,15 @@
   <owl:Ontology rdf:about="http://bibframe.org/vocab/"/>
   <owl:Ontology rdf:about="http://purl.org/pav/"/>
   <owl:Ontology rdf:about="http://www.loc.gov/standards/mads/rdf/v1.rdf"/>
-  <owl:Ontology rdf:about="http://www.w3.org/2006/vcard/ns"/>
-  <!-- <owl:Ontology rdf:about="http://vivoweb.org/ontology/core#"/> -->
+  <owl:Ontology rdf:about="http://purl.org/NET/c4dm/event.owl"/>
+  <owl:Ontology rdf:about="http://schema.rdfs.org/all"/>
+  <owl:Ontology rdf:about="http://purl.org/ontology/mo/"/>
+  <owl:Ontology rdf:about="http://id.loc.gov/vocabulary/relators/ths.madsrdf.rdf"/>
   <owl:Ontology rdf:about="http://ld4l.org/ontology/core#"/>
   <owl:Ontology rdf:about="http://ld4l.org/ontology/ext#"/>
-
+  <owl:Ontology rdf:about="http://vocab.getty.edu/aat/"/>
+  <owl:Ontology rdf:about="http://www.w3.org/2006/vcard/ns"/> 
+  <!-- <owl:Ontology rdf:about="http://vivoweb.org/ontology/core#"/> -->
   <!--
     Not needed. It's automatically loaded with vitro.
     <owl:Ontology rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/public#"/>
