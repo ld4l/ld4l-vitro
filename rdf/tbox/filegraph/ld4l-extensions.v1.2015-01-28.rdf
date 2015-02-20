@@ -243,7 +243,7 @@
     <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/ext#advisorOfThesis">
         <!-- 
             No domain and range defined for relators:ths, so omit them here.
-            Implied domain is bf:Person, assumed range is ld4l:Thesis or
+            Implied domain is bf:Person, implied range is ld4l:Thesis or
             bf:Work.
         -->
         <rdfs:label>advisor of thesis</rdfs:label>
