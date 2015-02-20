@@ -214,16 +214,17 @@
     
     <!-- 
         ALTERNATIVE to hasGlobalAuthority / hasLocalAuthority defined in 
-        ld4l-core
-        
-        <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/ext#authorityFor">
-            <rdfs:domain rdf:resource="http://bibframe.org/vocab/Resource"/>
-            <rdfs:label>authority for</rdfs:label>
-            <rdfs:range rdf:resource="http://bibframe.org/vocab/Authority"/>
-            <rdfs:comment>Links an external Authority to a bf:Authority.</rdfs:comment>       
-            <owl:inverseOf rdf:resource="http://bibframe.org/vocab/hasAuthority"/>
-        </owl:ObjectProperty>        
-    -->
+        ld4l-core. 
+        2015-02-19 Commented those properties out of ld4l-core, since unused.
+     -->   
+    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/ext#authorityFor">
+        <rdfs:domain rdf:resource="http://bibframe.org/vocab/Resource"/>
+        <rdfs:label>authority for</rdfs:label>
+        <rdfs:range rdf:resource="http://bibframe.org/vocab/Authority"/>
+        <rdfs:comment>Links an external Authority to a bf:Authority.</rdfs:comment>       
+        <owl:inverseOf rdf:resource="http://bibframe.org/vocab/hasAuthority"/>
+    </owl:ObjectProperty>        
+
     
     <!-- Inverses of PAV properties -->
     
