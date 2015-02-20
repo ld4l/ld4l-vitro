@@ -182,8 +182,8 @@ bf:Language
 bf:Provider
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
     
-bf:Resource
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
+#bf:Resource
+#    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
     
 bf:Title
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupResource> .
