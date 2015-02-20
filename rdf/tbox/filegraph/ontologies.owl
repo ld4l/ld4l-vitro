@@ -5,7 +5,7 @@
   <owl:Ontology rdf:about="http://xmlns.com/foaf/0.1/"/>
   <owl:Ontology rdf:about="http://bibframe.org/vocab/"/>
   <owl:Ontology rdf:about="http://purl.org/pav/"/>
-  <owl:Ontology rdf:about="http://www.loc.gov/standards/mads/rdf/v1.rdf"/>
+  <owl:Ontology rdf:about="http:// www.loc.gov/mads/rdf/v1#"/>
   <owl:Ontology rdf:about="http://id.loc.gov/vocabulary/relators/ths.madsrdf.rdf"/>
   <owl:Ontology rdf:about="http://ld4l.org/ontology/core#"/>
   <owl:Ontology rdf:about="http://ld4l.org/ontology/ext#"/>
