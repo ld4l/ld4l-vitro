@@ -22,6 +22,22 @@
   
   <!-- TODO Need to define classgroups that are relevant to real world objects
        rather than Bibframe entities -->
+
+  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupPerson">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-US">people</rdfs:label>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-14T14:00:00-5:00</vitro:modTime>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
+    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</vitro:displayRank>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupWork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-US">work</rdfs:label>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T11:00:00-4:00</vitro:modTime>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
+    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</vitro:displayRank>
+  </rdf:Description>
   
   <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupAnnotation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -63,28 +79,8 @@
     <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</vitro:displayRank>
   </rdf:Description>
 
-  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupRelationship">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en-US">relationship</rdfs:label>
-    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T11:00:00-4.00</vitro:modTime>
-    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
-    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</vitro:displayRank>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupRWO">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en-US">real world object</rdfs:label>
-    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-14T14:00:00-5:00</vitro:modTime>
-    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
-    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</vitro:displayRank>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupWork">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en-US">work</rdfs:label>
-    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-29T11:00:00-4:00</vitro:modTime>
-    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
-    <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</vitro:displayRank>
-  </rdf:Description>
+
 
 </rdf:RDF>

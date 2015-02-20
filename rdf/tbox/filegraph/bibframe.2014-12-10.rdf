@@ -59,7 +59,7 @@
     <rdfs:comment>Corporation or group of persons and/or organizations that acts, or may act, as a unit.</rdfs:comment>
   </rdfs:Class>
   <rdfs:Class rdf:about="http://bibframe.org/vocab/Person">
-    <rdfs:label>Person</rdfs:label>
+    <!-- <rdfs:label>Person</rdfs:label> -->
     <rdfs:subClassOf rdf:resource="http://bibframe.org/vocab/Agent"/>
     <rdfs:comment>Individual or identity established by an individual (either alone or in collaboration with one or more other individuals)</rdfs:comment>
   </rdfs:Class>

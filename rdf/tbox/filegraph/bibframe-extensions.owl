@@ -223,6 +223,14 @@
   <rdf:Description rdf:about="http://bibframe.org/vocab/Work">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  
+  <!-- Modification of Bibframe rdfs:labels -->
+  
+  <!-- Distinguish from foaf:Person in Vitro display. NB Modified bibframe
+    ontology file to remove original rdfs:label. -->
+  <rdfs:Class rdf:about="http://bibframe.org/vocab/Person">
+    <rdfs:label>Person Authority</rdfs:label>
+  </rdfs:Class>
 
 
   <!-- owl:DatatypeProperty assertions -->

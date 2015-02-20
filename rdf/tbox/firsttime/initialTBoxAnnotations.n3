@@ -4,6 +4,8 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix ld4l:    <http://ld4l.org/ontology/core#> .
+@prefix ld4l-ext: <http://ld4l.org/ontology/ext#> .
 
 
 ## ONTOLOGY METADATA ##
@@ -184,14 +186,14 @@ bf:Resource
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
     
 bf:Title
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupResource> .
 
 # This class is not included in the 10-28-14 version of the bibframe ontology    
 # bf:Related
-#     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRelationship> .
+#     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> .
     
 bf:Relator
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRelationship> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> .
     
 bf:Audio
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
@@ -230,19 +232,19 @@ bf:Work
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
    
 foaf:Agent
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRWO> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupPerson> .
     
 foaf:Group
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRWO> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOrganization> .
      
 foaf:Person
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRWO> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupPerson> .
  
 foaf:Organization
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRWO> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOrganization> .
 
 ld4l:Thesis
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupRWO> .   
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .   
     
 ## PROPERTIES ##
 
