@@ -8,7 +8,7 @@
     
     <!-- LD4L classes -->
     
-    <owl:Class rdf:about="http://ld4l.org/ontology/Thesis">
+    <owl:Class rdf:about="http://ld4l.org/ontology/core#Thesis">
         <rdfs:label>Thesis</rdfs:label>
         <rdfs:comment>A thesis written in fulfillment of a graduate degree.</rdfs:comment>
         <!-- Allowing for non-Text theses (e.g., composition, performance) --> 
