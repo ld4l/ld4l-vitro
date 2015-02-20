@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
+
+<!-- VIVO-specific default list view config file for object properties 
+    
+     See guidelines in vitro/doc/list_view_configuration_guidelines.txt -->
+
+<list-view-config>
+    <query-select>    
+		PREFIX rdf:      &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX rdfs:     &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX xsd:      &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX owl:      &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX swrl:     &lt;http://www.w3.org/2003/11/swrl#&gt;
+		PREFIX swrlb:    &lt;http://www.w3.org/2003/11/swrlb#&gt;
+		PREFIX vitro:    &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+		PREFIX bf:       &lt;http://bibframe.org/vocab/&gt;
+		PREFIX foaf:     &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX ld4l:     &lt;http://ld4l.org/ontology/core#&gt;
+		PREFIX ld4l-ext: &lt;http://ld4l.org/ontology/ext#&gt;
+		PREFIX madsrdf:  &lt;http://www.loc.gov/mads/rdf/v1.rdf#&gt;
+		PREFIX pav:      &lt;http://purl.org/pav/&gt;
+		PREFIX relators: &lt;http://id.loc.gov/vocabulary/relators/ths.madsrdf.rdf#&gt;
+		PREFIX vitro-public: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/public#&gt;          
+
+        SELECT ?authority
+               ?aLabel
+               ?person
+               ?pLabel 
+        WHERE {
+            ?subject ?property ?authority .
+            OPTIONAL { ?authority rdfs:label ?aLabel . }
+			OPTIONAL { ?authority &lt;http://www.loc.gov/mads/rdf/v1#identifiesRWO&gt; ?person . 
+                       OPTIONAL { ?person rdfs:label ?pLabel  }
+            }
+
+        } ORDER BY ?pLabel ?aLabel
+    </query-select>
+
+    <query-construct>
+		PREFIX rdf:      &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+		PREFIX rdfs:     &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX xsd:      &lt;http://www.w3.org/2001/XMLSchema#&gt;
+		PREFIX owl:      &lt;http://www.w3.org/2002/07/owl#&gt;
+		PREFIX swrl:     &lt;http://www.w3.org/2003/11/swrl#&gt;
+		PREFIX swrlb:    &lt;http://www.w3.org/2003/11/swrlb#&gt;
+		PREFIX vitro:    &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+		PREFIX bf:       &lt;http://bibframe.org/vocab/&gt;
+		PREFIX foaf:     &lt;http://xmlns.com/foaf/0.1/&gt;
+		PREFIX ld4l:     &lt;http://ld4l.org/ontology/core#&gt;
+		PREFIX ld4l-ext: &lt;http://ld4l.org/ontology/ext#&gt;
+		PREFIX madsrdf:  &lt;http://www.loc.gov/mads/rdf/v1.rdf#&gt;
+		PREFIX pav:      &lt;http://purl.org/pav/&gt;
+		PREFIX relators: &lt;http://id.loc.gov/vocabulary/relators/ths.madsrdf.rdf#&gt;
+		PREFIX vitro-public: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/public#&gt;          
+        
+        CONSTRUCT {
+            ?subject ?property ?authority .
+			?authority rdfs:label ?aLabel .
+            ?authority &lt;http://www.loc.gov/mads/rdf/v1#identifiesRWO&gt; ?person .
+            ?person rdfs:label ?pLabel
+        } WHERE {
+            { 
+                ?subject ?property ?authority .
+	         } UNION {      
+	                ?subject ?property ?authority .
+	                ?authority rdfs:label ?aLabel .
+             } UNION {      
+                	?subject ?property ?authority .
+                	?authority rdfs:label ?aLabel .
+	                ?authority &lt;http://www.loc.gov/mads/rdf/v1#identifiesRWO&gt; ?person .
+	         } UNION {      
+            		?subject ?property ?authority .
+            		?authority rdfs:label ?aLabel .
+                	?authority &lt;http://www.loc.gov/mads/rdf/v1#identifiesRWO&gt; ?person .
+					?person rdfs:label ?pLabel
+	         }        
+        }
+
+    </query-construct>
+
+    <template>propStatement-workToRWO.ftl</template>
+</list-view-config>
