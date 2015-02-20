@@ -26,7 +26,7 @@
     rdfs:label "LD4L Extensions"@en-US ;
     vitro:ontologyPrefixAnnot "ld4l-ext"^^xsd:string . 
           
-<http://www.loc.gov/standards/mads/rdf/v1.rdf>
+<http:// www.loc.gov/mads/rdf/v1#>
     rdfs:label "MADS/RDF"@en-US ;
     vitro:ontologyPrefixAnnot "madsrdf"^^xsd:string .
     
