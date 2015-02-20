@@ -230,15 +230,29 @@
     
     <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/ext#authorOf">
         <!-- 
-            pav doesn't define domain or range for authoredBy, so not defining
-            them for ld4l:authorOf. Domain could be bf:Person but also perhaps 
-            an organization? Or a vcard:Individual if we don't know enough to
-            create a foaf:Person. Range could be bf:Work or oclc:Work or...?
+            No domain and range defined for pav:authoredBy, so omit them here.
         -->
         <rdfs:label>author of</rdfs:label>
         <rdfs:comment>Author of a work.</rdfs:comment>       
         <owl:inverseOf rdf:resource="http://purl.org/pav/authoredBy"/>
     </owl:ObjectProperty>
+    
+    
+    <!-- Inverse of relators:ths property -->
 
+    <owl:ObjectProperty rdf:about="http://ld4l.org/ontology/ext#advisorOfThesis">
+        <!-- 
+            No domain and range defined for relators:ths, so omit them here.
+            Implied domain is bf:Person, assumed range is ld4l:Thesis or
+            bf:Work.
+        -->
+        <rdfs:label>advisor of thesis</rdfs:label>
+        <rdfs:comment>Advisor of a thesis.</rdfs:comment>       
+        <owl:inverseOf rdf:resource="http://id.loc.gov/vocabulary/relators/ths"/>
+    </owl:ObjectProperty>
+    
+    <rdf:Description rdf:about="http://id.loc.gov/vocabulary/relators/ths">
+        <rdfs:label>thesis advisor</rdfs:label>
+    </rdf:Description>
     
 </rdf:RDF>
