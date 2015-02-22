@@ -4,7 +4,7 @@
 @prefix display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ld4l: <http://ld4l.org/ontology> .
+@prefix ld4l: <http://ld4l.org/ontology#> .
 
 ### This file defines the default menu for ld4l-vitro. ###
 ### It overrides the menu.n3 from vitro.

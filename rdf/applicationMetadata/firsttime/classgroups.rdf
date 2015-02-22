@@ -35,6 +35,7 @@
     <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ClassGroup"/>
     <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</vitro:displayRank>
   </rdf:Description>
+
   
   <rdf:Description rdf:about="http://ld4l.org/ontology#vitroClassGroupAnnotations">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>

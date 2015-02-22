@@ -4,7 +4,7 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
-@prefix ld4l:    <http://ld4l.org/ontology/core#> .
+@prefix ld4l:    <http://ld4l.org/ontology#> .
 @prefix ld4l-ext: <http://ld4l.org/ontology/ext#> .
 
 
@@ -66,7 +66,7 @@
 #     vitro:ontologyPrefixAnnot "vivo"^^xsd:string .
 
     
-##### CLASS GROUPS #####
+##### CONFIGURATION OF CLASSES AND PROPERTIES #####
 
 ## TODO Define classgroups that are relevant to real world objects rather than
 ## Bibframe entities, and make assignments accordingly.
@@ -269,4 +269,11 @@ foaf:Person
 # TODO Define property class groups in 
 # /rdf/applicationMetadata/firsttime/propertygroups.rdf and group the properties 
 # here. 
-    
+
+bf:label
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot
+        <http://vitro.mannlib.cornell.edu/ns/vitro/role#nobody> .
+
+bf:authorizedAccessPoint
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot
+        <http://vitro.mannlib.cornell.edu/ns/vitro/role#nobody> .
