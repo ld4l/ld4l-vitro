@@ -16,3 +16,6 @@
 	rdf:type owl:Thing ; 
 	vitroDisplay:excludeClass bf:Person  ;
 	vitroDisplay:excludeClass bf:Organization  ;
+	vitroDisplay:excludeClass bf:Title ;
+	vitroDisplay:excludeClass bf:Annotation .
+	

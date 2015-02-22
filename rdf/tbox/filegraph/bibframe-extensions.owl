@@ -1596,4 +1596,18 @@
   <rdf:Description rdf:about="http://bibframe.org/vocab/tableOfContentsFor">
     <owl:inverseOf rdf:resource="http://bibframe.org/vocab/tableOfContents"/>
   </rdf:Description>
+  
+  <!-- 
+    Change Bibframe labels.
+    NB Requires removal of original label in Bibframe ontology.
+  -->
+  
+  <rdfs:Class rdf:about="http://bibframe.org/vocab/Monograph">
+    <rdfs:label>Monograph</rdfs:label>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="http://bibframe.org/vocab/MultipartMonograph">
+    <rdfs:label>Multipart Monograph</rdfs:label> 
+  </rdfs:Class>
+  
 </rdf:RDF>

@@ -8,7 +8,7 @@
 @prefix ld4l-ext: <http://ld4l.org/ontology/ext#> .
 
 
-## ONTOLOGY METADATA ##
+##### ONTOLOGY METADATA #####
 
 <http://bibframe.org/vocab/> 
     rdfs:label "Bibframe"@en-US ;  
@@ -30,10 +30,18 @@
     rdfs:label "MADS/RDF"@en-US ;
     vitro:ontologyPrefixAnnot "madsrdf"^^xsd:string .
     
-<http://id.loc.gov/vocabulary/relators/ths.madsrdf.rdf>
+<http://id.loc.gov/vocabulary/relators/>
     rdfs:label "Relators"@en-US ;
     vitro:ontologyPrefixAnnot "relators"^^xsd:string .
-    
+
+<http://purl.org/pav/>
+    rdfs:label "Provenance, Authoring and Versioning (PAV)"@en-US ;
+    vitro:ontologyPrefixAnnot "pav"^^xsd:string .  
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public>
+    rdfs:label "Vitro Public Ontology"@en-US ;
+    vitro:ontologyPrefixAnnot "vitro-public"^^xsd:string .
+            
 #<http://purl.org/ontology/mo/>
 #    rdfs:label "Music Ontology"@en-US ;
 #    vitro:ontologyPrefixAnnot "mo"^^xsd:string .
@@ -45,18 +53,10 @@
 #<http://schema.rdfs.org/all>
 #    rdfs:label "Schema.org"@en-US ;
 #    vitro:ontologyPrefixAnnot "schema"^^xsd:string .
-        
-<http://purl.org/pav/>
-    rdfs:label "Provenance, Authoring and Versioning (PAV)"@en-US ;
-    vitro:ontologyPrefixAnnot "pav"^^xsd:string .  
-    
+          
 #<http://vocab.getty.edu/aat/>
 #    rdfs:label "Getty Art and Architecture Thesaurus"@en-US ;
 #    vitro:ontologyPrefixAnnot "getty-aat"^^xsd:string .
-
-<http://vitro.mannlib.cornell.edu/ns/vitro/public>
-    rdfs:label "Vitro Public Ontology"@en-US ;
-    vitro:ontologyPrefixAnnot "vitro-public"^^xsd:string .
      
 #<http://www.w3.org/2006/vcard/ns>
 #    vitro:ontologyPrefixAnnot "vcard"^^xsd:string .
@@ -66,187 +66,205 @@
 #     vitro:ontologyPrefixAnnot "vivo"^^xsd:string .
 
     
-## CLASS GROUPS ##
+##### CLASS GROUPS #####
 
-## TODO Need to define classgroups that are relevant to real world objects
-## rather than Bibframe entities, and make assignments accordingly.
+## TODO Define classgroups that are relevant to real world objects rather than
+## Bibframe entities, and make assignments accordingly.
+
+
+## Annotations ##
 
 bf:Annotation
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotation> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotations> .
     
 bf:CoverArt
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotation> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotations> .
     
 bf:Review
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotation> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotations> .
     
 bf:Summary
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotation> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotations> .
     
 bf:TableOfContents
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotation> .
-    
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAnnotations> .
+
+
+## Authorities ##
+
 bf:Agent
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthorities> .
     
 bf:Authority
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthorities> .
     
 bf:Family
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthorities> .
     
 bf:Jurisdiction
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthorities> .
     
 bf:Meeting
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
-    
-bf:Organization
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthorities> .
     
 bf:Person
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthorities> .
               
 bf:Place
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthorities> .
     
 bf:Temporal
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
-    
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthorities> .
+   
+ 
+## Topics ##
+       
 bf:Topic
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupAuthority> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupTopics> .
     
+## HeldMaterial ##
+
 bf:HeldItem
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupHeldMaterial> .
     
 bf:HeldMaterial
     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupHeldMaterial> .    
-    
+
+   
+## Instances ##
+
 bf:Archival
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
     
 bf:Collection
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
     
 bf:Electronic
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
     
 bf:Instance
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
 
 bf:Integrating
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
     
 bf:Manuscript
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
     
 bf:Monograph
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
     
 bf:MultipartMonograph
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
     
 bf:Print
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
     
 bf:Serial
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
-    
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
+        
 bf:Tactile
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstance> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupInstances> .
+  
+  
+## Other Resources ##
     
 bf:Arrangement
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> .    
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> .    
     
 bf:Category
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> . 
     
 bf:Classification
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> . 
     
 bf:DescriptionAdminInfo
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> . 
     
 bf:Event
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> . 
     
 bf:Identifier
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> . 
     
 bf:IntendedAudience
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> . 
     
 bf:Language
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> . 
     
 bf:Provider
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> . 
     
 #bf:Resource
 #    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> . 
     
-bf:Title
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupResource> .
+#bf:Title
+#    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> .
 
 # This class is not included in the 10-28-14 version of the bibframe ontology    
 # bf:Related
-#     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> .
+#     vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> .
     
 bf:Relator
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResource> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOtherResources> .
+
     
+## Works ##
+
 bf:Audio
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
     
 bf:Cartography
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
     
 bf:Dataset
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
     
 bf:MixedMaterial
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
     
 bf:MovingImage
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
     
 bf:Multimedia
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
     
 bf:NotatedMovement
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
     
 bf:NotatedMusic
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
     
 bf:StillImage
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
     
 bf:Text
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .    
-    
-bf:ThreeDimensionalObject
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
-    
-bf:Work
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .
-   
-foaf:Agent
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupPerson> .
-    
-foaf:Group
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOrganization> .
-     
-foaf:Person
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupPerson> .
- 
-foaf:Organization
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOrganization> .
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .   
 
 ld4l:Thesis
-    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWork> .   
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .  
     
-## PROPERTIES ##
+bf:ThreeDimensionalObject
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
+    
+bf:Work
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupWorks> .
+
+
+## Organizations ##
+ 
+foaf:Organization
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupOrganizations> .
+
+
+## People ##
+    
+foaf:Person
+    vitro:inClassGroup <http://ld4l.org/ontology#vitroClassGroupPeople> .  
+    
+    
+### PROPERTIES ###
 
 # TODO Define property class groups in 
 # /rdf/applicationMetadata/firsttime/propertygroups.rdf and group the properties 
