@@ -2,11 +2,69 @@
 <rdf:RDF
     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"> 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:bf="http://bibframe.org/vocab/"
+    xmlns:pav="http://purl.org/pav/"
+    xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+    xmlns:relators="http://id.loc.gov/vocabulary/relators/"
+    xmlns:ld4l="http://ld4l.org/ontology/core#"
+    xmlns:ld4l-ext="http://ld4l.org/ontology/ext#">
 
-    <!-- TODO Add property groups to organize display.
-        Add properties to groups in initialTBoxAnnotations. -->
+    <rdf:Description rdf:about="http://vivoweb.org/ontology#vitroPropertyGroupLd4l">
+        <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">"2015-02-22T21:20:48"</vitro:modTime>
+        <rdfs:label xml:lang="en-US">ld4l</rdfs:label>
+        <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#PropertyGroup"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linked Data for Libraries properties</vitro:publicDescriptionAnnot>
+        <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</vitro:displayRank>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology#vitroPropertyGroupFoaf">
+        <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">"2015-02-22T21:20:48"</vitro:modTime>
+        <rdfs:label xml:lang="en-US">foaf</rdfs:label>
+        <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#PropertyGroup"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Friend of a Friend properties</vitro:publicDescriptionAnnot>
+        <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</vitro:displayRank>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology#vitroPropertyGroupMadsRdf">
+        <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">"2015-02-22T21:20:48"</vitro:modTime>
+        <rdfs:label xml:lang="en-US">madsrdf</rdfs:label>
+        <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#PropertyGroup"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MADSRDF properties</vitro:publicDescriptionAnnot>
+        <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</vitro:displayRank>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology#vitroPropertyGroupPav">
+        <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">"2015-02-22T21:20:48"</vitro:modTime>
+        <rdfs:label xml:lang="en-US">pav</rdfs:label>
+        <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#PropertyGroup"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provenance, Authoring, and Versioning proporties</vitro:publicDescriptionAnnot>
+        <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</vitro:displayRank>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology#vitroPropertyGroupRelators">
+        <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">"2015-02-22T21:20:48"</vitro:modTime>
+        <rdfs:label xml:lang="en-US">relators</rdfs:label>
+        <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#PropertyGroup"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Library of Congress Relators</vitro:publicDescriptionAnnot>
+        <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</vitro:displayRank>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+       
+    <rdf:Description rdf:about="http://vivoweb.org/ontology#vitroPropertyGroupBibframe">
+        <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">"2015-02-22T21:20:48"</vitro:modTime>
+        <rdfs:label xml:lang="en-US">bibframe</rdfs:label>
+        <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#PropertyGroup"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linked Data for Libraries properties</vitro:publicDescriptionAnnot>
+        <vitro:displayRank rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</vitro:displayRank>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
     
 </rdf:RDF>
